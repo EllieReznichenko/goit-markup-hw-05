@@ -510,24 +510,22 @@
 
     <div class="backdrop">
       <div class="modal">
-        <div class="bnt-close-wrap">
-          <button type="button" class="close-btn">
-            <svg class="icon-close-black" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-black"></use>
-            </svg>
-          </button>
-        </div>
+        <button type="button" class="close-btn">
+          <svg class="icon-close-black" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
         <p class="form-title">Leave your contacts and we will call you back</p>
-
+        <!-- MODAL -->
         <form class="modal-form">
           <!-- Name -->
           <div class="form-field">
-            <label class="form-label" for="input-name">Name</label>
+            <label class="form-label" for="user-name">Name</label>
             <div class="input-wrapper">
               <input
                 class="form-input"
-                name="input-name"
-                id="input-name"
+                name="user-name"
+                id="user-name"
                 type="text"
               />
               <svg class="form-icon" width="18" height="24">
@@ -537,12 +535,12 @@
           </div>
           <!-- Phone -->
           <div class="form-field">
-            <label class="form-label" for="input-phone">Phone</label>
+            <label class="form-label" for="user-phone">Phone</label>
             <div class="input-wrapper">
               <input
                 class="form-input"
-                name="input-phone"
-                id="input-phone"
+                name="user-phone"
+                id="user-phone"
                 type="tel"
               />
               <svg class="form-icon" width="18" height="24">
@@ -552,12 +550,12 @@
           </div>
           <!-- Email -->
           <div class="form-field">
-            <label class="form-label" for="input-email">Email</label>
+            <label class="form-label" for="user-email">Email</label>
             <div class="input-wrapper">
               <input
                 class="form-input"
-                name="input-email"
-                id="input-email"
+                name="user-email"
+                id="user-email"
                 type="email"
               />
               <svg class="form-icon" width="18" height="24">
@@ -566,7 +564,7 @@
             </div>
           </div>
           <!-- Comment -->
-          <div class="form-field">
+          <div class="text-area-field">
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
               name="user-comment"
@@ -575,15 +573,16 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="form-field">
+
+          <div class="checkbox-field">
             <input
               type="checkbox"
-              name="private-policy"
-              id="private-policy"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-check visually-hidden"
-              value="on"
+              value="true"
             />
-            <label for="private-policy" class="modal-check-text"
+            <label for="user-privacy" class="modal-check-text"
               ><span class="modal-check-item"
                 ><svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check-icon"></use></svg
